@@ -42,9 +42,79 @@
             color: rgb(253, 99, 125);
         }
     </style>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
+    
 </head>
 
 <body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Navigator
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="http://leolee5633.com/joanne/">给卓然的</a>
+                </li>
+                <li>
+                    <a href="http://leolee5633.com/website1">个人主页</a>
+                </li>
+                <li>
+                    <a href="http://leolee5633.com/spacex/">去火星吧</a>
+                </li>
+                <li>
+                    <a href="#">啥都没有</a>
+                </li>
+                <li>
+                    <a href="#">别点了</a>
+                </li>
+                <li>
+                    <a href="#">以后会有的</a>
+                </li>
+                <li>
+                    <a href="http://leolee5633.com">返回主页</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>去火星吧</h1>
+                  
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">指向栏</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    
     <div class="content">
         <h2>Elon Musk, you are the hero of the human race! I love you.</h2>
         <h2>On 6th Feb 2018, first test flight of Falcon Heavy, delivering a Tesla Roadster into Earth-Mars orbit.</h2>
